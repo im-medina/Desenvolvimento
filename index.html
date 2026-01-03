@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra o Brasil - Turismo Brasileiro</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Header com navegação -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Descubra o Brasil</h1>
+            </div>
+
+            <!-- Added hamburger menu toggle using checkbox trick for CSS-only solution -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </label>
+
+            
+            <nav class="nav">
+                <a href="#inicio" class="nav-link">Início</a>
+                <a href="#destinos" class="nav-link">Destinos</a>
+                <a href="#cultura" class="nav-link">Cultura</a>
+                <a href="#natureza" class="nav-link">Natureza</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <!-- Added carousel with 4 images and progress indicator -->
+        <div class="carousel">
+            <div class="carousel-slide" style="background-image: url('4.turismo/assets/Rio_de_Janeiro_just_before_the_sunrise_1.jpg?height=800&width=1600')"></div>
+            <div class="carousel-slide" style="background-image: url('/placeholder.svg?height=800&width=1600')"></div>
+            <div class="carousel-slide" style="background-image: url('/placeholder.svg?height=800&width=1600')"></div>
+            <div class="carousel-slide" style="background-image: url('/placeholder.svg?height=800&width=1600')"></div>
+            
+            <!-- Progress indicator in top left corner -->
+            <div class="carousel-progress">
+                <svg class="progress-ring" width="40" height="40">
+                    <circle class="progress-ring-circle" cx="20" cy="20" r="16"></circle>
+                </svg>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <h2 class="hero-title">Explore as maravilhas do Brasil</h2>
+            <p class="hero-subtitle">De praias paradisíacas a florestas exuberantes, descubra a diversidade de um país continental</p>
+            <a href="#destinos" class="btn-primary">Começar a explorar</a>
+        </div>
+    </section>
+
+    <!-- Destinos Section -->
+    <section id="destinos" class="section destinos">
+        <div class="container">
+            <h2 class="section-title">Destinos Populares</h2>
+            <p class="section-subtitle">Conheça os lugares mais incríveis do Brasil</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <div class="card-image" style="background-image: url('/placeholder.svg?height=300&width=400')"></div>
+                    <div class="card-content">
+                        <h3>Rio de Janeiro</h3>
+                        <p>Cidade maravilhosa com praias icônicas, Cristo Redentor e Pão de Açúcar</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-image" style="background-image: url('/placeholder.svg?height=300&width=400')"></div>
+                    <div class="card-content">
+                        <h3>Amazônia</h3>
+                        <p>A maior floresta tropical do mundo com biodiversidade incomparável</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-image" style="background-image: url('/placeholder.svg?height=300&width=400')"></div>
+                    <div class="card-content">
+                        <h3>Fernando de Noronha</h3>
+                        <p>Paraíso ecológico com as praias mais bonitas do Brasil</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-image" style="background-image: url('/placeholder.svg?height=300&width=400')"></div>
+                    <div class="card-content">
+                        <h3>Foz do Iguaçu</h3>
+                        <p>Cataratas impressionantes na fronteira com Argentina e Paraguai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultura Section -->
+    <section id="cultura" class="section cultura">
+        <div class="container">
+            <div class="two-column">
+                <div class="content-column">
+                    <h2 class="section-title">Cultura Vibrante</h2>
+                    <p class="text-large">O Brasil é uma mistura única de culturas, ritmos e sabores que encantam visitantes do mundo todo.</p>
+                    <ul class="feature-list">
+                        <li>
+                            <strong>Música:</strong> Do samba ao forró, da bossa nova ao axé
+                        </li>
+                        <li>
+                            <strong>Gastronomia:</strong> Feijoada, acarajé, churrasco e muito mais
+                        </li>
+                        <li>
+                            <strong>Festas:</strong> Carnaval, Festas Juninas e celebrações regionais
+                        </li>
+                        <li>
+                            <strong>Artesanato:</strong> Riqueza artística em cada região do país
+                        </li>
+                    </ul>
+                </div>
+                <div class="image-column">
+                    <div class="feature-image" style="background-image: url('/placeholder.svg?height=500&width=600')"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Natureza Section -->
+    <section id="natureza" class="section natureza">
+        <div class="container">
+            <div class="two-column reverse">
+                <div class="image-column">
+                    <div class="feature-image" style="background-image: url('/placeholder.svg?height=500&width=600')"></div>
+                </div>
+                <div class="content-column">
+                    <h2 class="section-title">Natureza Exuberante</h2>
+                    <p class="text-large">Com seis biomas distintos, o Brasil oferece uma das maiores biodiversidades do planeta.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">7.500km</div>
+                            <div class="stat-label">de litoral</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">20%</div>
+                            <div class="stat-label">da água doce mundial</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">6</div>
+                            <div class="stat-label">biomas únicos</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="section contato">
+        <div class="container">
+            <div class="contact-box">
+                <h2 class="section-title">Planeje sua viagem</h2>
+                <p class="section-subtitle">Entre em contato para receber dicas personalizadas e informações sobre os melhores destinos</p>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Seu nome" class="form-input" required>
+                        <input type="email" placeholder="Seu e-mail" class="form-input" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="Destino de interesse" class="form-input" required>
+                    </div>
+                    <div class="form-row">
+                        <textarea placeholder="Conte-nos sobre sua viagem dos sonhos..." class="form-textarea" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Descubra o Brasil. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
